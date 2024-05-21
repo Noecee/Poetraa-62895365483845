@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js --max-old-space-size=8192",
     "pm2": "pm2 start index.js --name hisoka -- --max-old-space-size=8192",
     "restart:pm2": "pm2 restart hisoka",
     "stop:pm2": "pm2 stop hisoka"
@@ -20,7 +20,7 @@
     "@whiskeysockets/baileys": "github:WhiskeySockets/Baileys",
     "cfonts": "^3.2.0",
     "dotenv": "^16.4.5",
-    "file-type": "latest",
+    "file-type": "^19.0.0",
     "fluent-ffmpeg": "^2.1.3",
     "node-webpmux": "^3.2.0",
     "qrcode-terminal": "^0.12.0"
